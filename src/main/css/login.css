@@ -1,0 +1,14 @@
+*{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Questrial', sans-serif;
+}
+
+body {
+    background-color: rgb(0, 64, 61);
+}
+
+#loginForm{
+    background-color: rgba(189, 195, 199, .7);
+    padding: 50px;
+    margin: 100px 100px;
+}
