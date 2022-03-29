@@ -60,20 +60,19 @@ a:focus::after {
 }
 
 .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 100px;
 }
 
-#vetPuppy{
+.imgContainer{
     max-width: 40%;
 }
 
-#vetPuppyText{
+.textContainer{
+    font-size: 3em;
     color: rgb(255, 255, 255);
-}
-
-#puppyMeds{
-    max-width: 40%;
-}
-
-#puppyMedsText{
-    color: rgb(255, 255, 255);
+    max-width: 20%;
+    text-align: center;
 }
