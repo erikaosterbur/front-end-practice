@@ -45,7 +45,7 @@ a:focus::after {
     justify-content: center;
     margin: 100px;
 }
-#registerForm{
+#registerFormContainer{
     background-color: rgba(189, 195, 199, .7);
     padding: 50px;
 }
