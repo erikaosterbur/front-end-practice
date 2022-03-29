@@ -17,7 +17,7 @@ $(document).ready(function() {
             alert("Not a valid email!");
         } else if(!passwordRegex.test($('#registerPasswordInput').val())){
             alert("Password must contain at least one letter, one number, and be between 8 and 20 characters");
-        } else if($('#registerEmailInput').val() !== $('#reenterPasswordInput').val()){
+        } else if($('#registerPasswordInput').val() !== $('#reenterPasswordInput').val()){
             alert("Passwords do not match");
         }
     })
