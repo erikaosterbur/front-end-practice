@@ -48,5 +48,6 @@ a:focus::after {
 #loginFormContainer{
     background-color: rgba(189, 195, 199, .7);
     padding: 50px;
+    border-radius: 15px;
 }
 
