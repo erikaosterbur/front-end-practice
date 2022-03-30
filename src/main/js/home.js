@@ -46,10 +46,23 @@ $(document).ready(function() {
             `<div class="card m-5" style="width: 18rem;">
                 <div class="card-body">
                     <img src="`+img+`" class="card-img-top" alt="`+alt+`">
-                    <h3 class="card-title">`+name+`</h3>
-                    <p class="card-text">Type: `+type+`</p>
-                    <p class="card-text">Breed: `+breed+`</p>
-                    <p class="card-text">Birthday: `+birthday+`</p>
+                    <h3 class="card-title p-2" style="text-align: center">`+name+`</h3>
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <th>Type:</th>
+                                <td>`+type+`</td>
+                            </tr>
+                            <tr>
+                                <th>Breed:</th>
+                                <td>`+breed+`</td>
+                            </tr>
+                            <tr>
+                                <th>Birthday:</th>
+                                <td>`+birthday+`</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>`
         )
