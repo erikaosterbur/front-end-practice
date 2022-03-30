@@ -37,6 +37,12 @@
                         <input type="text" class="form-control form-control-lg" id="registerLastNameInput" placeholder="last name" required>
                         <div class="invalid-feedback">Please provide a last name</div>
                     </div>
+                    <select class="form-select mb-3" aria-label="Default select example" required>
+                        <option selected disabled value>I am a...</option>
+                        <option value="user">User</option>
+                        <option value="vet">Vet</option>
+                        <div class="invalid-feedback">Please select either User or Vet</div>
+                    </select>
                     <div class="mb-3">
                         <input type="password" class="form-control form-control-lg" id="registerPasswordInput" placeholder="password" required>
                         <div class="invalid-feedback">Please provide a password</div>
