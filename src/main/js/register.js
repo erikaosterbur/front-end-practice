@@ -2,7 +2,6 @@
 $(document).ready(function() {
 
     $('#registerForm').on("submit", function(event){
-        event.preventDefault();
 
         const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
         const passwordRegex = /^(?=.*\d)(?=.*[A-Za-z])([^\s]){8,20}$/;
@@ -12,7 +11,7 @@ $(document).ready(function() {
             $('#registerPasswordInput').val() === $('#reenterPasswordInput').val()
         )
         {
-            alert("Success!");
+            $('#registerForm').attr("action", "home.html");
         } else if(!emailRegex.test($('#registerEmailInput').val())){
             alert("Not a valid email!");
         } else if(!passwordRegex.test($('#registerPasswordInput').val())){
@@ -20,10 +19,11 @@ $(document).ready(function() {
         } else if($('#registerPasswordInput').val() !== $('#reenterPasswordInput').val()){
             alert("Passwords do not match");
         }
-    })
+    });
+
 });
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+// Disabling form submissions if there are invalid fields
 (function () {
     'use strict'
 
