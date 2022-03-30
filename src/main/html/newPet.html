@@ -8,9 +8,61 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Questrial&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link rel="stylesheet" href="../css/home.css">
+<!--        <link rel="stylesheet" href="../css/newPet.css">-->
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     </head>
+    <style>
+        *{
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Questrial', sans-serif;
+        }
+
+        body {
+            background-color: rgb(0, 64, 61);
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin: 0 2rem;
+        }
+        /* Underline styles */
+        a {
+            color: white;
+            font-size: 2em;
+            display: block;
+            position: relative;
+            padding: 0.2em 0;
+        }
+        a:hover{
+            color: white;
+        }
+        /* Fade in */
+        a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0.1em;
+            background-color: #bd724a;
+            opacity: 0;
+            transition: opacity 300ms, transform 300ms;
+        }
+        a:hover::after,
+        a:focus::after {
+            opacity: 1;
+            transform: translate3d(0, 0.2em, 0);
+        }
+    </style>
     <body>
         <ul class="nav justify-content-center">
             <li>
